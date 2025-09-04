@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 100px;
+}

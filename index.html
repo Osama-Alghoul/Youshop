@@ -79,9 +79,34 @@
             </details>
             <details>
               <summary>Refine by</summary>
+              <input type="text" value="Android 6.0" />
+              <i class="fa-regular fa-x"></i>
+              <button>Clear All</button>
             </details>
             <details>
               <summary>Price</summary>
+              <div class="range-container">
+                <div class="slider-track"></div>
+                <input
+                  type="range"
+                  min="55"
+                  max="5000"
+                  value="55"
+                  class="min-thumb"
+                />
+                <input
+                  type="range"
+                  min="55"
+                  max="5000"
+                  value="5000"
+                  class="max-thumb"
+                />
+              </div>
+              <div class="price-display">
+                Price: $<span id="min-price">55</span> - $<span id="max-price"
+                  >5000</span
+                >
+              </div>
             </details>
             <details>
               <summary>Operating System</summary>
@@ -139,27 +164,192 @@
           </div>
           <div class="grid">
             <!-- TODO Add the missing content -->
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
+            <div class="product_card">
+              <img src="" alt="" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <p>Lenovo P8 Tab3 8 plus</p>
+              <p>$329.99</p>
+            </div>
+            <div class="product_card">
+              <img src="" alt="" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <p>Teclast X10 Quad Core 3G</p>
+              <p>$150.99</p>
+            </div>
+            <div class="product_card">
+              <img src="" alt="" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <p>BDF 10 inch Design 3G</p>
+              <p>$586.99</p>
+            </div>
+            <div class="product_card">
+              <img src="" alt="" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <p>BDF 10 inch Octa Core</p>
+              <p>$50.00</p>
+            </div>
+            <div class="product_card">
+              <img src="" alt="" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <p>Teclast P89H 7.85 inch Tablet</p>
+              <p>$421.99</p>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>10.1 inch Android 6.0 32GB</p>
+                <p>$865.40</p>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Aoson R102 10.1 inch</p>
+                <p>$159.00</p>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>FULCOL 10 inch Tablet PC Octa</p>
+                <p>$312.99</p>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>LZEWIN 2018 Android 10 Core</p>
+                <p>$100.99</p>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>BMXC 10 inch Tablet PC 3G 4G</p>
+                <p>$99.99</p>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Lucury Golden 10.1 inch</p>
+                <p>$156.00</p>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>FULCOL 10 icnh Tablet PC</p>
+                <p>$1025.00</p>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>CARBAYTA 10.1 Android 10</p>
+                <p>$329.99</p>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>CONGWEI 10 inch Deca Core</p>
+                <p>$85.00</p>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>BOBARRY 10 inch Android</p>
+                <p>$56.99</p>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Lenovo YOGA BOOK X90L</p>
+                <p>$136.50</p>
+              </div>
+            </div>
           </div>
-          <div>Show more</div>
+          <button>Show more</button>
           <div class="flex">
-            <!-- TODO Add the missing content -->
-            <div></div>
+            <button><i class="fa-solid fa-arrow-left"></i></button>
             <div>1</div>
             <div>2</div>
             <div>3</div>
@@ -167,31 +357,149 @@
             <div>5</div>
             <div>...</div>
             <div>26</div>
-            <div></div>
+            <button><i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </section>
         <section>
           <!-- TODO Add the missing content -->
           <h3>Recently viewed</h3>
           <div class="grid">
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
-            <div class="product_card"></div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Lenovo YOGA BOOK X90L</p>
+                <p>$136.50</p>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Lenovo YOGA BOOK X90L</p>
+                <p>$136.50</p>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Lenovo YOGA BOOK X90L</p>
+                <p>$136.50</p>
+              </div>
+            </div>
+            <div class="product_card">
+              <div class="product_card">
+                <img src="" alt="" />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>Lenovo YOGA BOOK X90L</p>
+                <p>$136.50</p>
+              </div>
+            </div>
           </div>
         </section>
         <hr />
         <section>
-          <!-- TODO Add the missing content -->
           <h4>Most Search Keywords</h4>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div>
+            <span>Laptops:</span><a href="">Appleo Laptop</a> |
+            <a href="">Samsung Laptop</a> | <a href="">Lenovo Laptop</a> |
+            <a href="">Sonyo Laptop</a> | <a href="">Dell Laptop</a> |
+            <a href="">Asus Laptop</a> | <a href="">Toshiba Laptop</a> |
+            <a href="">LGG Laptop</a> | <a href="">HPO Laptop</a>
+          </div>
+          <div>
+            <span>Tablet:</span><a href="">Appleo Tablet</a> |
+            <a href="">Samsung Tablet</a> | <a href="">Lenovo Tablet</a> |
+            <a href="">Sonyo Tablet</a> | <a href="">Dell Tablet</a> |
+            <a href="">Asus Tablet</a> | <a href="">Toshiba Tablet</a> |
+            <a href="">LGG Tablet</a> | <a href="">HPO Tablet</a>
+          </div>
+          <div>
+            <span>Mobile phone:</span><a href="">Appleo Mobile phone</a> |
+            <a href="">Samsung Mobile phone</a> |
+            <a href="">Lenovo Mobile phone</a> |
+            <a href="">Sonyo Mobile phone</a> |
+            <a href="">Dell Mobile phone</a> |
+            <a href="">Asus Mobile phone</a> |
+            <a href="">Toshiba Mobile phone</a> |
+            <a href="">LGG Mobile phone</a> | <a href="">HPO Mobile phone</a>
+          </div>
         </section>
       </article>
     </main>
-    <footer>
-      <!-- TODO Add the missing content -->
+    <footer class="flex container">
+      <div>
+        <div>
+          <b>Contact us</b>
+          <a href=""><i class="fa-solid fa-phone"></i>(+800) 123 456 7890</a>
+          <a href=""><i class="fa-solid fa-envelope"></i>manager@shop.com</a>
+          <a href=""><i class="fa-solid fa-location-dot"></i>Location store</a>
+        </div>
+        <div>
+          <b>Policies & info</b> <a href="">Terms & Conditions</a
+          ><a href="">Policy for sellers</a><a href="">Policy for Buyers</a
+          ><a href="">Shipping & Refund</a><a href="">Wholesales Policy</a>
+        </div>
+        <div>
+          <b>Quick links</b><a href=""></a><a href=""></a><a href=""></a
+          ><a href=""></a><a href=""></a>
+        </div>
+        <div>
+          <b>My account</b><a href=""></a><a href=""></a><a href=""></a
+          ><a href=""></a><a href=""></a>
+        </div>
+        <div>
+          <b>Subscribe now</b>
+          <div>
+            Contrary to popular belief of Lorem Ipsum Latin amet Ltin from.
+          </div>
+          <form action="">
+            <div>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Your E-mail address"
+              />
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </form>
+          <a href=""><i class="fa-brands fa-facebook"></i></a
+          ><a href=""><i class="fa-brands fa-twitter"></i></a
+          ><a href=""> <i class="fa-brands fa-youtube"></i> </a
+          ><a href=""><i class="fa-solid fa-wifi"></i></a>
+        </div>
+      </div>
+      <div class="flex">
+        <div>Copyright © 2018 Oleh Chabanov</div>
+        <div>
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </div>
     </footer>
   </body>
   <script src="script.js"></script>

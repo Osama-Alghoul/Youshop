@@ -1,6 +1,12 @@
+/* General Styles */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+}
+
+:root {
+  --primary-color: rgb(255 140 10);
+  --secondary-color: rgb(45 45 45);
 }
 
 .flex {
@@ -16,19 +22,88 @@ body {
   padding: 0 100px;
 }
 
-/* Header Styles */
-header {
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+/* Header Styles */
+/* Top header */
 header .top {
   justify-content: space-between;
-  background-color: rgb(45 45 45);
+  background-color: var(--secondary-color);
   color: white;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-header .info {
-  gap: 10px;
+header .top .info {
+  gap: 30px;
+}
+
+/* Center header */
+header .center {
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+header .center h1 .YOU{
+ color: var(--primary-color);
+}
+
+header .center input {
+  border-radius: 16px 0 0 16px;
+  border-color: rgb(221, 221, 221);
+  margin: 0;
+  padding: 5px;
+  width: 400px;
+}
+
+header .center button {
+  border-radius: 0 16px 16px 0;
+  background-color: var(--primary-color);
+  color: white;
+  border-color: transparent;
+  margin: 0;
+  width: 50px;
+}
+
+header .center .timing {
+  color: var(--primary-color);
+}
+
+header .center .fa-heart,
+header .center .fa-cart-shopping {
+  font-size: 24px;
+  position: relative;
+}
+
+header .center .fa-heart::after,
+header .center .fa-cart-shopping::after {
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+header .center .fa-heart::after {
+  content: "13";
+}
+
+header .center .fa-cart-shopping::after {
+  content: "0";
+}
+
+header .center .shopping {
+  gap: 20px;
+  align-items: center;
 }
 
 .range-container {

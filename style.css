@@ -10,6 +10,7 @@ body {
   --primary-color: rgb(255 140 10);
   --secondary-color: rgb(45 45 45);
   --background: rgb(245 245 245);
+  --text-secondary-color: rgb(126, 126, 126);
 }
 
 .flex {
@@ -33,7 +34,7 @@ ul {
 
 a {
   text-decoration: none;
-    color: unset;
+  color: unset;
 }
 
 a:hover {
@@ -128,7 +129,7 @@ hr.hr {
 }
 
 /* Bottom header (nav) */
-nav{
+nav {
   align-items: center;
   gap: 20px;
 }
@@ -138,7 +139,9 @@ nav button {
   color: white;
   border: none;
   padding: 10px 20px;
-  width: 120px;
+  width: fit-content;
+  gap: 10px;
+  cursor: pointer;
 }
 
 nav ul {
@@ -150,33 +153,90 @@ main {
   background-color: var(--background);
 }
 
+#breadcrumbs {
+  padding-top: 10px;
+  color: var(--text-secondary-color);
+}
+
+.products-article {
+  gap: 20px;
+}
+
 /* Aside */
 aside {
   background-color: white;
   height: fit-content;
+  width: 300px;
 }
 
 aside details {
   border: 1px solid rgb(221, 221, 221);
-  padding: 20px;
+  padding: 15px;
 }
 
 aside summary {
   font-weight: bold;
 }
 
-/* Products section */
-section.showcase .products {
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+aside .related-categories {
+  margin-left: 5px;
+  font-size: smaller;
 }
 
-/*  */
+aside .related-categories :first-child {
+  color: var(--text-secondary-color);
+}
+
+aside .product-tags {
+  background-color: var(--background);
+  padding: 40px 0 20px;
+}
+
+aside .product-tags ul {
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+aside .product-tags li {
+  width: fit-content;
+  border: 1px solid gray;
+  border-radius: 24px;
+  padding: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+aside .product-tags li:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+aside .refine-by input {
+  border-radius: 16px;
+  border-color: rgb(221, 221, 221);
+  margin: 10px 0;
+  padding: 5px;
+}
+
+aside .refine-by .fa-x {
+  font-size: smaller;
+  cursor: pointer;
+}
+
+aside .refine-by button {
+  color: var(--primary-color);
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}
+
+/* Aside price range */
 .range-container {
   position: relative;
-  width: 300px;
+  width: 200px;
   height: 20px;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 .range-container input[type="range"] {
@@ -223,4 +283,113 @@ section.showcase .products {
   text-align: center;
   margin-top: 20px;
   font-size: 1.2em;
+}
+
+aside .operating-system ul,
+aside .screen-size ul {
+  color: var(--text-secondary-color);
+  font-size: smaller;
+  margin: 10px;
+}
+
+aside .operating-system li,
+aside .screen-size li {
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+aside .operating-system li:hover,
+aside .screen-size li:hover {
+  color: var(--primary-color);
+}
+
+/* Showcase sections styles */
+section.showcase .Change_layout {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+section.showcase #cards {
+  background-color: var(--primary-color);
+  position: relative;
+  border-radius: 4px;
+}
+
+section.showcase #cards::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section.showcase #cards::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+section.showcase #list {
+  position: relative;
+  border-radius: 4px;
+}
+
+section.showcase #list::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: rgb(204, 204, 204);
+  position: absolute;
+  border-radius: 4px;
+  box-shadow: 0px 7.5px 0 0px rgb(204, 204, 204);
+}
+
+section.showcase #list::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: rgb(204, 204, 204);
+  position: absolute;
+  border-radius: 4px;
+  bottom: 0;
+}
+
+section.showcase .search-result {
+  gap: 5px;
+  color: var(--text-secondary-color);
+  font-size: smaller;
+  align-items: center;
+}
+
+section.showcase .filter {
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+section.showcase .filter select {
+  padding: 10px;
+  border-radius: 24px;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+/* Products section */
+section.showcase .products,
+section.recently-viewed .products {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: white;
+  height: fit-content;
+}
+
+.product_card img {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
 }

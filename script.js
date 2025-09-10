@@ -16,8 +16,8 @@ function updateRange() {
 
   const min = parseInt(minPriceInput.value);
   const max = parseInt(maxPriceInput.value);
-  const minPercentage = ((min - 55) / (5000 - 55)) * 100;
-  const maxPercentage = ((max - 55) / (5000 - 55)) * 100;
+  const minPercentage = (min / 5500) * 100;
+  const maxPercentage = (max / 5500) * 100;
 
   minPriceDisplay.textContent = min;
   maxPriceDisplay.textContent = max;

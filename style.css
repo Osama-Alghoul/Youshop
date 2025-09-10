@@ -383,13 +383,32 @@ section.showcase .filter select {
 section.showcase .products,
 section.recently-viewed .products {
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
   background-color: white;
   height: fit-content;
 }
 
 .product_card img {
-  width: 100%;
-  height: 70%;
-  object-fit: contain;
+  width: 80%;
+  height: 65%;
+  object-fit: cover;
+}
+
+/* Most searched keywords section */
+section.most-searched{
+  line-height: 25px;
+}
+section.most-searched span {
+  font-weight: bold;
+}
+
+section.most-searched .type {
+  gap: 10px;
+  font-size: 14px;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 40px 0;
 }

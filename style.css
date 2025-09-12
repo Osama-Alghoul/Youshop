@@ -166,7 +166,7 @@ main {
 aside {
   background-color: white;
   height: fit-content;
-  width: 300px;
+  width: 420px;
 }
 
 aside details {
@@ -385,16 +385,91 @@ section.recently-viewed .products {
   grid-template-columns: repeat(4, 1fr);
   background-color: white;
   height: fit-content;
+  padding: 10px;
 }
 
 .product_card img {
-  width: 80%;
-  height: 65%;
+  width: 100%;
   object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.product_card .product-details {
+  padding: 0 10px;
+}
+
+.product_card i:nth-last-child(1) {
+  color: var(--background);
+}
+
+.product_card i {
+  color: rgb(245 215 81);
+}
+
+.product_card .product-details p:nth-last-child(1) {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.product_card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.product_card:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  height: calc(100% + 50px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.product_card .hover-buttons {
+  position: absolute;
+  opacity: 0;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  transition: bottom 0.3s ease-in-out;
+  background-color: white;
+}
+
+.product_card:hover .hover-buttons {
+  bottom: 0;
+  opacity: 1;
+}
+
+.product_card button {
+  cursor: pointer;
+  border-radius: 24px;
+  padding: 10px;
+  color: white;
+}
+
+.product_card .add-to-cart {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.product_card .wishlist {
+  border-color: #ddd;
+  background-color: unset;
+}
+
+.product_card .wishlist i{
+  color: black;
+  font-size: 20px;
 }
 
 /* Most searched keywords section */
-section.most-searched{
+section.most-searched {
   line-height: 25px;
 }
 section.most-searched span {

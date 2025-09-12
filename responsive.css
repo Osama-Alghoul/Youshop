@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  section.showcase .products,
+  section.recently-viewed .products {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  section.showcase .products,
+  section.recently-viewed .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

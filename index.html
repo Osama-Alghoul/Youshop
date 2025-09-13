@@ -48,11 +48,27 @@
       </div>
       <hr class="hr" />
       <nav class="flex container">
-        <button class="flex">
+        <button class="flex" id="menu-toggle">
           <i class="fa-solid fa-bars"></i>
           All categories
         </button>
-        <ul class="flex">
+        <ul class="menu hidden absolute">
+          <li><a href="#">Apple</a></li>
+          <li><a href="#">Samsung</a></li>
+          <li><a href="#">Asus</a></li>
+          <li><a href="#">Dell</a></li>
+          <li><a href="#">Huawei</a></li>
+          <li><a href="#">HP</a></li>
+          <li><a href="#">Lenovo</a></li>
+          <li><a href="#">Microsoft</a></li>
+          <li><a href="#">Xiaomi</a></li>
+        </ul>
+        <script>
+          document.getElementById("menu-toggle").addEventListener("click", function(){
+            document.querySelector(".menu").classList.toggle("hidden");
+          });
+        </script>
+        <ul class="flex navigation">
           <li><a href="#">Apple</a></li>
           <li><a href="#">Samsung</a></li>
           <li><a href="#">Asus</a></li>

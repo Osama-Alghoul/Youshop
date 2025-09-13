@@ -17,6 +17,14 @@ body {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .grid {
   display: grid;
 }
@@ -138,6 +146,7 @@ hr.hr {
 nav {
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 
 nav button {
@@ -148,6 +157,15 @@ nav button {
   width: fit-content;
   gap: 10px;
   cursor: pointer;
+}
+
+nav ul.menu{
+  top: 40px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(221, 221, 221);
+  z-index: 20;
 }
 
 nav ul {

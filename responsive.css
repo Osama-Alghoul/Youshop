@@ -25,7 +25,7 @@
     margin-bottom: auto;
   }
 
-  nav li {
+  nav .navigation li {
     display: none;
   }
 

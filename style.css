@@ -24,6 +24,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 100px;
+  max-width: 1600px;
 }
 
 ul {
@@ -86,6 +87,11 @@ header .center button {
 
 header .center .timing {
   color: var(--primary-color);
+}
+
+header .center .fav-cart {
+  gap: 20px;
+  align-items: center;
 }
 
 header .center .fa-heart,

@@ -421,19 +421,21 @@ section.recently-viewed .products {
 .product_card {
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-  transform: scale(1);
-  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, z-index 0s 0.3s;
 }
 
 .product_card:hover {
-  transform: scale(1.05);
-  z-index: 10;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05); /* Zoom in by 5% */
+  z-index: 10; /* Bring the card to the front */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+  transition: transform 0.3s ease-in-out;
 }
 
 .product_card .hover-buttons {
-  display: none;
+  opacity: 0;
+  display: flex;
   width: 100%;
   gap: 10px;
   padding: 10px;
@@ -443,7 +445,7 @@ section.recently-viewed .products {
 
 .product_card:hover .hover-buttons {
   bottom: 0;
-  display: flex;
+  opacity: 1;
 }
 
 .product_card button {

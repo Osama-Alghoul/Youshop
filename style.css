@@ -548,3 +548,34 @@ footer .footer-section a {
 footer .first {
   justify-content: space-between;
 }
+
+footer .social {
+  gap: 10px;
+}
+
+footer form input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 24px;
+  margin: 10px 0;
+}
+
+footer form button {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+footer .second {
+  padding: 5px 0;
+  font-size: smaller;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .second img {
+  width: 40px;
+}
